@@ -1,0 +1,8 @@
+{
+    "KontaktSDK": {
+        "name": "KontaktSDK",
+        "type": "podspec",
+        "spec": "~> 1.4.0",
+        "count": 1
+    }
+}

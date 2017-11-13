@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-nexen-sdk" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>WeAreNexen Cordova Plugin</name>
+
+    <dependency id="cordova-plugin-compat" version="^1.1.0" />
+    <!-- <dependency id="cordova-plugin-app-event" version="^1.2.1" /> -->
+
+    <js-module name="NexenSDK" src="www/NexenSDK.js">
+        <clobbers target="plugins.NexenSDK" />
+    </js-module>
+
+    <preference name="APP_PASSWORD" />
+    <preference name="APP_NAME" />
+    <preference name="LOCATION_USAGE_DESCRIPTION" />
+    <preference name="BLUETOOTH_USAGE_DESCRIPTION" />
+
+    <platform name="android">
+
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+            <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="be.wearenexen.cordova.PushHandlerActivity" android:exported="true"/>
+            <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" >
+                <intent-filter>
+                    <action android:name="android.intent.action.BOOT_COMPLETED" />
+                    <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                    <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                </intent-filter>
+            </receiver>
+            <receiver android:name="be.wearenexen.cordova.BootCompletedReceiver">
+                <intent-filter>
+                    <action android:name="android.intent.action.BOOT_COMPLETED" />
+                </intent-filter>
+            </receiver>
+            <receiver android:name="be.wearenexen.NexenProximityManager$GeofenceBroadcastReceiver" android:enabled="true" />
+            <service android:name="org.altbeacon.beacon.service.BeaconService" android:enabled="true" android:exported="false" android:isolatedProcess="false" android:label="beacon" />
+            <service android:name="org.altbeacon.beacon.BeaconIntentProcessor" android:enabled="true" android:exported="false" />
+            <service android:enabled="true" android:exported="false" android:name="be.wearenexen.cordova.services.NexenBackgroundScannerService" />
+        </config-file>
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="NexenSDK">
+                <param name="android-package" value="be.wearenexen.cordova.NexenSDK"/>
+            </feature>
+        </config-file>
+
+        <config-file parent="/*" target="res/values/strings.xml">
+            <string name="wan_app_password">$APP_PASSWORD</string>
+            <string name="wan_app_name">$APP_NAME</string>
+        </config-file>
+
+        <source-file src="src/android/main/NexenSDK.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/BasePlugin.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/BeaconManager.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/NexenCordovaApplication.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/PluginAction.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/PushHandlerActivity.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/OpenUrlTask.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/SettingsManager.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/BootCompletedReceiver.java" target-dir="src/be/wearenexen/cordova" />
+        <source-file src="src/android/main/services/NexenBackgroundScannerService.java" target-dir="src/be/wearenexen/cordova/services" />
+        <source-file src="src/android/main/options/Options.java" target-dir="src/be/wearenexen/cordova/options" />
+        <source-file src="src/android/main/options/NotificationOptions.java" target-dir="src/be/wearenexen/cordova/options" />
+        <source-file src="src/android/main/utils/ResourceUtils.java" target-dir="src/be/wearenexen/cordova/utils" />
+        <source-file src="src/android/main/utils/PermissionUtils.java" target-dir="src/be/wearenexen/cordova/utils" />
+        <source-file src="src/android/main/utils/JSONConverterUtils.java" target-dir="src/be/wearenexen/cordova/utils" />
+        <source-file src="src/android/main/utils/ServiceUtils.java" target-dir="src/be/wearenexen/cordova/utils" />
+
+        <hook type="after_prepare" src="hooks/add-application-name.js" />
+
+        <framework src="src/android/nexen.gradle" custom="true" type="gradleReference" />
+        <resource-file src="libs/android/NexenSDK-Release.aar" target="libs/NexenSDK-Release.aar" />
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="NexenSDK">
+                <param name="ios-package" value="NexenSDK"/>
+            </feature>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="WeAreNexenAppPassword">
+            <string>$APP_PASSWORD</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="WeAreNexenAppName">
+            <string>$APP_NAME</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>$LOCATION_USAGE_DESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>$LOCATION_USAGE_DESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>$LOCATION_USAGE_DESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
+            <key>NSBluetoothPeripheralUsageDescription</key>
+            <string>$BLUETOOTH_USAGE_DESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>fetch</string>
+                <string>location</string>
+                <string>bluetooth-central</string>
+            </array>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIRequiredDeviceCapabilities">
+            <array>
+                <string>bluetooth-le</string>
+            </array>
+        </config-file>
+
+        <header-file src="src/ios/main/NexenSDK.h"/>
+        <source-file src="src/ios/main/NexenSDK.m"/>
+        <header-file src="src/ios/main/BeaconManager.h"/>
+        <source-file src="src/ios/main/BeaconManager.m"/>
+        <header-file src="src/ios/main/extensions/NSBundle+plist.h" />
+        <source-file src="src/ios/main/extensions/NSBundle+plist.m" />
+        <header-file src="src/ios/main/extensions/AppDelegate+NexenSDK.h" />
+        <source-file src="src/ios/main/extensions/AppDelegate+NexenSDK.m" />
+
+        <framework src="KontaktSDK" type="podspec" spec="~> 1.4.0" />
+        <framework src="libs/ios/NXBeaconSDK.framework" embed="true" custom="true" />
+    </platform>
+
+</plugin>

@@ -1,0 +1,52 @@
+repositories{
+  jcenter()
+  flatDir {
+      dirs 'libs'
+   }
+}
+
+android {
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 25
+    }
+
+   packagingOptions {
+       exclude 'META-INF/NOTICE'
+       exclude 'META-INF/LICENSE'
+   }
+}
+
+ext.postBuildExtras = {
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        allprojects {
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_1_7
+                targetCompatibility = JavaVersion.VERSION_1_7
+            }
+        }
+    }
+}
+
+dependencies {
+   compile(name:'NexenSDK-Release', ext:'aar')
+   compile 'org.altbeacon:android-beacon-library:2.9.1'
+   compile 'com.google.android.gms:play-services-location:8.4.0'
+   compile 'com.android.support:support-v4:23.2.1'
+   compile 'org.altbeacon:android-beacon-library:2.9.1'
+   compile 'pl.charmas.android:android-reactive-location:0.9@aar'
+   compile 'io.reactivex:rxjava:1.1.5'
+   compile 'io.reactivex:rxandroid:0.25.0'
+   compile 'com.artemzin.rxjava:proguard-rules:1.1.5.0'
+   compile 'com.squareup.retrofit2:retrofit:2.1.0'
+   compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+   compile 'com.squareup.retrofit2:converter-jackson:2.1.0'
+   compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.8.5'
+   compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+   compile 'com.github.bumptech.glide:glide:3.7.0'
+}

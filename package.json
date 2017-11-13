@@ -1,0 +1,47 @@
+{
+  "name": "helloworld",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-browser": "^5.0.1",
+    "cordova-custom-config": "^4.0.2",
+    "cordova-ios": "^4.5.2",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-console": "^1.1.0",
+    "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-dialogs": "^1.3.3",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-http": "^1.2.0",
+    "cordova-plugin-nexen-sdk": "file:///Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+    "cordova-plugin-whitelist": "^1.3.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-nexen-sdk": {
+        "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
+        "APP_NAME": "ExterionNewsApp",
+        "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
+        "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring"
+      },
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-custom-config": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-http": {},
+      "cordova-plugin-device": {}
+    },
+    "platforms": [
+      "browser",
+      "ios",
+      "android"
+    ]
+  }
+}

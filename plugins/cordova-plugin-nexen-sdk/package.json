@@ -1,0 +1,62 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+        "spec": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+        "type": "directory"
+      },
+      "/Users/djordanpapilaya/afstudeer-tech-projecten/nexentest"
+    ]
+  ],
+  "_from": "../cordovaplugin",
+  "_id": "cordova-plugin-nexen-sdk@0.0.1",
+  "_inCache": true,
+  "_location": "/cordova-plugin-nexen-sdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+    "spec": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../cordovaplugin",
+  "_shasum": "5f29113cf1d1c95c21d7993d08cc889f2363fce4",
+  "_shrinkwrap": null,
+  "_spec": "/Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin",
+  "_where": "/Users/djordanpapilaya/afstudeer-tech-projecten/nexentest",
+  "author": "",
+  "cordova": {
+    "id": "cordova-plugin-nexen-sdk",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "To add the plugin to your project, first download the plugin and put it aside your project. Then add the plugin by running the following command:",
+  "devDependencies": {},
+  "gitHead": "9fdaf0a54b76e6daaa434cb88e779c8aef4eecb0",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "ISC",
+  "name": "cordova-plugin-nexen-sdk",
+  "optionalDependencies": {},
+  "readme": "# WeAreNexen Cordova Plugin\n## Adding the plugin to your project\n\nTo add the plugin to your project, first download the plugin and put it aside your project.\nThen add the plugin by running the following command:\n\n    cordova plugin add <path_to_plugin>  --variable APP_PASSWORD=\"<password>\" --variable APP_NAME=\"<name>\" --variable LOCATION_USAGE_DESCRIPTION=\"This app uses your location to track beacons.\" --variable BLUETOOTH_USAGE_DESCRIPTION=\"Please allow to use Bluetooth to start beacon monitoring\"\n\n* The app name & password are provided by WeAreNexen and are used to identify your app.\n* The location/bluetooth usage description is required by iOS.\n\n## Plugin location\n\nThe plugin can be found in `window.plugins.NexenSDK`.\n\n## Plugin methods\n\n### Start\nTo start scanning the SDK should call the following method:\n\n\tplugins.NexenSDK.startScanning(options, (data) => {\n        // Subscribe to the plugin callbacks\n\t\tthis.onLocationsLoaded();\n\t\tthis.onProximityZoneNotification();\n\t}, (err) => {\n\t\t// Handle error\n\t});\n\nYou should subscribe to onLocationsLoaded and onProximityZoneNotification to receive these callbacks after the call was successful.\n\nThis call might throw an error if the permissions were not granted on Android/iOS.\n\n### Stop\nThis stops the SDK from scanning.\n\n    plugins.NexenSDK.stopScanning((data) => {\n\t\t// Do something after stopping the scanning\n    }, (err) => {\n\t\t// Handle error\n    });\n\nNote: Since stopping the NXProximityManager on iOS makes its instance unusable, stopping the SDK on iOS is artificial and will not actually stop scanning.\n\n### OnLocationsLoaded\n\nThis callback is called when the locations have been loaded by the SDK.\n\n\tplugins.NexenSDK.onLocationsLoaded((data) => {\n        // Do something with the data\n\t}, (err) => {\n\t\t// Handle error\n\t});\n\nIt is important to subscribe to this call after starting the SDK was successful.\nThe data received is the same as in the native SDK's, formatted as a JSON object.\n\n### OnProximityZoneNotification\n\nThis callback is called when a notification was triggered.\n\n    plugins.NexenSDK.onProximityZoneNotification((data) => {\n        // Do something with the notification\n    }, (err) => {\n        // Handle error\n    });\n\n\nIt is important to subscribe to this call after starting the SDK was successful.\nThe data received is the same as in the native SDK's, formatted as a JSON object.\n\n### onPushNotificationTappedForZone\n\nThis callback can be used to confirm a user has tapped a push notification (or some other sort of interaction with the beacon).\n\n    plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {\n        // Call was successful\n    }, (err) => {\n        // Zone not found, handle error\n    });\n\nNote: The contentTypeId parameter is only required for iOS and will be ignored on Android.\n\n### onOpenUrl\n\nThis callback is called whenever a push notification was tapped that has HTML content.\nThe URL is passed onto Cordova.\n\n    plugins.NexenSDK.onOpenUrl((url) => {\n        // Handle the URL\n    }, (err) => {\n        // Handle error\n    });\n\n## Plugin options\n\nWhen starting the plugin the following options payload can be passed:\n\n    var options = {\n        disabledCategories: [],\n        tags: [],\n        allowBackgroundScanning: true,\t\t\t// Android only\n        notifications: {\n            showNotifications: true,\n            textColor: \"#ff9900\", \t\t\t\t// Android only\n            smallIconName: \"notification_icon\"\t// Android only\n        }\n    };\n",
+  "readmeFilename": "README.md",
+  "version": "0.0.1"
+}

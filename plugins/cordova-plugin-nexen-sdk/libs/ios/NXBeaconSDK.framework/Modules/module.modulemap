@@ -1,0 +1,6 @@
+framework module NXBeaconSDK {
+  umbrella header "NXBeaconSDK.h"
+
+  export *
+  module * { export * }
+}

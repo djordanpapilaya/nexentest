@@ -1,0 +1,44 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-nexen-sdk": {
+      "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
+      "APP_NAME": "ExterionNewsApp",
+      "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
+      "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring",
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-http": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    }
+  }
+}

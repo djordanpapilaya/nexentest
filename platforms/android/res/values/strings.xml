@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Exterion News</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="wan_app_password">VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR</string>
+    <string name="wan_app_name">ExterionNewsApp</string>
+</resources>

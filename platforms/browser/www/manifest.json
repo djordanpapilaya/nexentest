@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Exterion News",
+  "short_name": "Exterion News",
+  "version": "com.exterion.exterionnews",
+  "description": "An Exterion Media application that is created to provide news and setup tests with beacons.",
+  "author": "The Exterion DEV Team",
+  "icons": [],
+  "start_url": "index.html"
+}
