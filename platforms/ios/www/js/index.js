@@ -74,7 +74,16 @@ var app = {
             console.log(data);
         }, function (err) {
             console.log(err);
-        })
+        });
+
+        plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {
+            document.querySelector('h1').innerHTML = data.toJSON();
+            logToDom(data);
+            logToDom(data.toJSON());
+        }, (err) => {
+            console.log(err);
+            logToDom(err);
+        });
     }
 };
 

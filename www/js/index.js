@@ -20,6 +20,13 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        document.querySelector('.settings').addEventListener('click', function () {
+            document.querySelector('.settings-wrapper').className += " open";
+        });
+
+        document.querySelector('.settings.close').addEventListener('click', function () {
+            document.querySelector('.settings-wrapper').classList.remove('open')
+        });
     },
 
     // deviceready Event Handler
@@ -74,7 +81,16 @@ var app = {
             console.log(data);
         }, function (err) {
             console.log(err);
-        })
+        });
+
+        plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {
+            document.querySelector('h1').innerHTML = data.toJSON();
+            logToDom(data);
+            logToDom(data.toJSON());
+        }, (err) => {
+            console.log(err);
+            logToDom(err);
+        });
     }
 };
 

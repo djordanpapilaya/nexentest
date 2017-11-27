@@ -5,12 +5,14 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Hello World</title>
 </head>
 <body>
 <div class="app">
-    <h1>Exterion Beacon test - news app.</h1>
+    <h1>Exterion News - Headline <span class="settings"></span> </h1>
     <div class="banner"></div>
     <div class="news-wrapper">
         <h2>Verandering in Out of Home strategie Unilever blijkt zeer succesvol</h2>
@@ -44,6 +46,226 @@
             relevanter kan worden voor adverteerders bij introductiecampagnes én brandingcampagnes.
         </p>
     </div>
+
+    <ons-page class="settings-wrapper open">
+        <h1>Exterion News - Settings <span class="settings close"></span> </h1>
+
+        <div class="content">
+            <div class="list-title">Personalisatie instellingen</div>
+            <ul class="list">
+                <li class="list-header list-header--material">
+                    Personaliseer de advertenties die jij ontvangt binnen deze applicatie. Op basis van jouw instellingen versturen wij onze ads.
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="segment" style="width: 280px; margin: 0 auto;">
+                        <button class="segment__item">
+                            <input type="radio" class="segment__input" name="segment-a" checked>
+                            <div class="segment__button">Man</div>
+                        </button>
+                        <button class="segment__item">
+                            <input type="radio" class="segment__input" name="segment-a">
+                            <div class="segment__button">Vrouw</div>
+                        </button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="list-item__center">
+                        <input type="number" class="text-input" placeholder="Leeftijd">
+                    </div>
+                </li>
+                <li class="list-header list-header--material">
+                    Interesses
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_nieuws" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_nieuws" class="list-item__center">
+                        Nieuws en Evenementen
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_fashion" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_fashion" class="list-item__center">
+                        Fashion
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_eten" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_eten" class="list-item__center">
+                        Eten en Drinken
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_muziek" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_muziek" class="list-item__center">
+                        Muziek
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_gezondheid" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_gezondheid" class="list-item__center">
+                        Gezondheid & Fitness
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_entertainment" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_entertainment" class="list-item__center">
+                        Entertainment
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_algemeen" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_algemeen" class="list-item__center">
+                        Algemene informatie
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_kunst" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_kunst" class="list-item__center">
+                        Kunst en Geschiedenis
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_technologie" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_technologie" class="list-item__center">
+                        Technologie
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_verzorging" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_verzorging" class="list-item__center">
+                        Verzorging
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_winkelen" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_winkelen" class="list-item__center">
+                        Winkelen
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_auto" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_auto" class="list-item__center">
+                        Auto's
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_sport" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_sport" class="list-item__center">
+                        Sport
+                    </label>
+                </li>
+            </ul>
+            <div class="list-title">Privacy instellingen</div>
+            <ul class="list">
+                <li class="list-header list-header--material">
+                    Exterion News gebruikt bluetooth om verschillende cookies te verzamelen. Dit gebruiken wij om betere advertenties te tonen.
+                    <br>Wij hebben toestemming voor:
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_locatie" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_locatie" class="list-item__center">
+                        Locatiegegevens te gebruiken
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_bleutooth" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_bleutooth" class="list-item__center">
+                        Bleutooth te mogen gebruiken
+                    </label>
+                </li>
+                <li class="list-item list-item--tappable list-item--longdivider">
+                    <div class="list-item__left">
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkbox_notificatie" class="checkbox__input" name="c" checked="checked">
+                            <div class="checkbox__checkmark"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox_notificatie" class="list-item__center">
+                        Notificaties te sturen
+                    </label>
+                </li>
+            </ul>
+            <br><br>
+            <button class="button--large--cta" style="width: 95%; margin: 0 auto; background: red">Al mijn cookie data wissen</button>
+        </div>
+    </ons-page>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>

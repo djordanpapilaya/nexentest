@@ -342,7 +342,7 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 88HB86P69F;
+						DevelopmentTeam = 2L5ZZGL2B8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -469,7 +469,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 88HB86P69F;
+				DEVELOPMENT_TEAM = 2L5ZZGL2B8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Exterion News/Plugins/cordova-plugin-nexen-sdk\"",
@@ -483,7 +483,7 @@
 				INFOPLIST_FILE = "Exterion News/Exterion News-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.exterion.exterionnews1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exterion.exterionnews-aveen1";
 				PRODUCT_NAME = "Exterion News";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -503,7 +503,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 88HB86P69F;
+				DEVELOPMENT_TEAM = 2L5ZZGL2B8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Exterion News/Plugins/cordova-plugin-nexen-sdk\"",
@@ -515,7 +515,7 @@
 				INFOPLIST_FILE = "Exterion News/Exterion News-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.exterion.exterionnews1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exterion.exterionnews-aveen1";
 				PRODUCT_NAME = "Exterion News";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

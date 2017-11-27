@@ -29,19 +29,6 @@ var app = {
     onDeviceReady: function() {
         // this.receivedEvent('deviceready');
 
-
-        function onPrompt(results) {
-            alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
-        }
-
-        navigator.notification.prompt(
-            'Please enter your name',  // message
-            onPrompt,                  // callback to invoke
-            'Registration',            // title
-            ['Ok','Exit'],             // buttonLabels
-            'Jane Doe'                 // defaultText
-        );
-
         this.initBeaconSearch();
     },
 
@@ -87,7 +74,14 @@ var app = {
             console.log(data);
         }, function (err) {
             console.log(err);
-        })
+        });
+
+        plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {
+            document.querySelector('h1').innerHTML = data.toJSON();
+            logToDom(data.toJSON());
+        }, (err) => {
+            console.log(err);
+        });
     }
 };
 
