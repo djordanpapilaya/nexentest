@@ -65,15 +65,14 @@ var app = {
         };
 
         plugins.NexenSDK.startScanning(options, function (data) {
-            console.log(data);
-            logToDom(JSON.stringify(data));
+            //The scanning of beacons that are defined in the Nexen platform
             this.onLocationsLoaded();
         }, function (err) {
             console.log(err);
         });
 
         plugins.NexenSDK.onLocationsLoaded(function (data) {
-            logToDom(data.toJSON());
+            //When a user is in the beacon zone
             console.log(data);
         });
 
