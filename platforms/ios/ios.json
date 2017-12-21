@@ -27,6 +27,10 @@
             {
               "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"NativeStorage\"><param name=\"ios-package\" value=\"NativeStorage\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -88,13 +92,13 @@
           "UIStatusBarHidden": [
             {
               "xml": "<true />",
-              "count": 9
+              "count": 16
             }
           ],
           "UIViewControllerBasedStatusBarAppearance": [
             {
               "xml": "<false />",
-              "count": 9
+              "count": 16
             }
           ]
         }
@@ -128,6 +132,9 @@
       "PACKAGE_NAME": "com.exterion.exterionnews"
     },
     "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "com.exterion.exterionnews"
     }
   },
@@ -337,6 +344,24 @@
       "clobbers": [
         "device"
       ]
+    },
+    {
+      "id": "cordova-plugin-nativestorage.mainHandle",
+      "file": "plugins/cordova-plugin-nativestorage/www/mainHandle.js",
+      "pluginId": "cordova-plugin-nativestorage",
+      "clobbers": [
+        "NativeStorage"
+      ]
+    },
+    {
+      "id": "cordova-plugin-nativestorage.LocalStorageHandle",
+      "file": "plugins/cordova-plugin-nativestorage/www/LocalStorageHandle.js",
+      "pluginId": "cordova-plugin-nativestorage"
+    },
+    {
+      "id": "cordova-plugin-nativestorage.NativeStorageError",
+      "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
+      "pluginId": "cordova-plugin-nativestorage"
     }
   ],
   "plugin_metadata": {
@@ -347,6 +372,7 @@
     "cordova-plugin-dialogs": "1.3.3",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-http": "1.2.0",
-    "cordova-plugin-device": "1.1.6"
+    "cordova-plugin-device": "1.1.6",
+    "cordova-plugin-nativestorage": "2.2.2"
   }
 }

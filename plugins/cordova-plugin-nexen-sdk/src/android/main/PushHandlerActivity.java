@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.definitive.newsmonkey.R;
-
 import java.util.Collection;
 import java.util.List;
 

@@ -11,6 +11,10 @@
             {
               "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"NativeStorage\"><param name=\"browser-package\" value=\"NativeStorage\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -47,6 +51,9 @@
       "PACKAGE_NAME": "com.exterion.exterionnews"
     },
     "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "com.exterion.exterionnews"
     }
   },
@@ -276,6 +283,24 @@
       "id": "cordova-plugin-device.DeviceProxy",
       "pluginId": "cordova-plugin-device",
       "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-nativestorage/www/mainHandle.js",
+      "id": "cordova-plugin-nativestorage.mainHandle",
+      "pluginId": "cordova-plugin-nativestorage",
+      "clobbers": [
+        "NativeStorage"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-nativestorage/www/LocalStorageHandle.js",
+      "id": "cordova-plugin-nativestorage.LocalStorageHandle",
+      "pluginId": "cordova-plugin-nativestorage"
+    },
+    {
+      "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
+      "id": "cordova-plugin-nativestorage.NativeStorageError",
+      "pluginId": "cordova-plugin-nativestorage"
     }
   ],
   "plugin_metadata": {
@@ -287,6 +312,7 @@
     "cordova-plugin-dialogs": "1.3.3",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-http": "1.2.0",
-    "cordova-plugin-device": "1.1.6"
+    "cordova-plugin-device": "1.1.6",
+    "cordova-plugin-nativestorage": "2.2.2"
   }
 }

@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL hasBeenBootstrapped;
 @property (nonatomic, strong) NXProximityManager *proximityManager;
-@property (nonatomic, strong) NXSettingsManager *settingsManager;
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *password;
 

@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.Iterator;
 
 public class Options {
 
@@ -56,11 +57,12 @@ public class Options {
             }
 
             if (data.has("tags")) {
-                JSONArray tags = data.getJSONArray("tags");
-                for (int i = 0; i < tags.length(); i++) {
-                    JSONObject keyValueSet = tags.getJSONObject(i);
-                    String key = keyValueSet.keys().next();
-                    mTags.put(key, keyValueSet.getString(key));
+                JSONObject tags = data.getJSONObject("tags");
+                
+                Iterator<String> keys = tags.keys();
+                while(keys.hasNext()) {
+                    String key = keys.next();
+                    mTags.put(key, tags.getString(key));
                 }
             }
 

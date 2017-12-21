@@ -61,18 +61,18 @@
                 <li class="list-item">
                     <div class="segment" style="width: 280px; margin: 0 auto;">
                         <button class="segment__item">
-                            <input type="radio" class="segment__input" name="segment-a" checked>
+                            <input type="radio" class="segment__input" name="segment-a" value="men" checked>
                             <div class="segment__button">Man</div>
                         </button>
                         <button class="segment__item">
-                            <input type="radio" class="segment__input" name="segment-a">
+                            <input type="radio" class="segment__input" value="woman" name="segment-a">
                             <div class="segment__button">Vrouw</div>
                         </button>
                     </div>
                 </li>
                 <li class="list-item">
                     <div class="list-item__center">
-                        <input type="number" class="text-input" placeholder="Leeftijd">
+                        <input type="number" class="text-input" placeholder="Leeftijd" id="age-input">
                     </div>
                 </li>
                 <li class="list-header list-header--material">
@@ -81,7 +81,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_nieuws" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_nieuws" class="interest checkbox__input" name="1" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -92,7 +92,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_fashion" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_fashion" class="interest checkbox__input" name="2" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -103,7 +103,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_eten" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_eten" class="interest checkbox__input" name="3" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -114,7 +114,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_muziek" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_muziek" class="interest checkbox__input" name="4" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -125,7 +125,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_gezondheid" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_gezondheid" class="interest checkbox__input" name="5" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -136,7 +136,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_entertainment" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_entertainment" class="interest checkbox__input" name="6" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -147,7 +147,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_algemeen" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_algemeen" class="interest checkbox__input" name="7" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -158,7 +158,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_kunst" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_kunst" class="interest checkbox__input" name="8" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -169,7 +169,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_technologie" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_technologie" class="interest checkbox__input" name="9" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -180,7 +180,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_verzorging" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_verzorging" class="interest checkbox__input" name="10" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -191,7 +191,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_winkelen" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_winkelen" class="interest checkbox__input" name="11" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -202,7 +202,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_auto" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_auto" class="interest checkbox__input" name="13" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -213,7 +213,7 @@
                 <li class="list-item list-item--tappable list-item--longdivider">
                     <div class="list-item__left">
                         <label class="checkbox">
-                            <input type="checkbox" id="checkbox_sport" class="checkbox__input" name="c" checked="checked">
+                            <input type="checkbox" id="checkbox_sport" class="interest checkbox__input" name="14" checked="checked">
                             <div class="checkbox__checkmark"></div>
                         </label>
                     </div>
@@ -263,7 +263,9 @@
                 </li>
             </ul>
             <br><br>
-            <button class="button--large--cta" style="width: 95%; margin: 0 auto; background: red">Al mijn cookie data wissen</button>
+            <button class="button--large--cta" id="save-btn" style="width: 95%; margin: 0 auto; background: cornflowerblue">Opslaan</button>
+            <br><br>
+            <button class="button--large--cta" id="remove-data" style="width: 95%; margin: 0 auto; background: red">Al mijn cookie data wissen</button>
         </div>
     </ons-page>
 </div>

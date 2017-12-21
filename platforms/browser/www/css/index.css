@@ -30,6 +30,7 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
+    overflow: visible !important;
 }
 
 /* Portrait layout (default) */
@@ -57,14 +58,32 @@ h1 {
     font-weight:bolder;
     text-transform: capitalize;
     overflow:visible;
-    text-align:center;
+    text-align:left;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 10px;
     margin: 0;
     background-color: rgb(236,25,68);
     top: 0;
     width: 100%;
     position: fixed;
+    z-index: 1;
+}
+
+.settings {
+    background-image: url(../img/icon_settings.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.settings.close {
+    background-image: url(../img/icon_close.png);
 }
 
 h2 {
@@ -170,4 +189,24 @@ p {
 p.bold-copy {
     padding: 0px 0;
     font-weight: bolder;
+}
+
+
+.settings-wrapper {
+    min-height: 200vh;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    display: none;
+}
+
+.settings-wrapper.open {
+    display: block;
+}
+
+.settings-wrapper .content {
+    margin-top: 80px;
+    z-index: -1;
 }

@@ -17,49 +17,80 @@
  * under the License.
  */
 var app = {
+    personalisation: {
+        sex: "male",
+        age: "",
+        uncheckedItems: [],
+        uncheckedItemsNumbers: []
+    },
+
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        document.querySelector('.settings').addEventListener('click', function () {
+            document.querySelector('.settings-wrapper').className += " open";
+        });
+
+        document.querySelector('.settings.close').addEventListener('click', function () {
+            document.querySelector('.settings-wrapper').classList.remove('open')
+        });
+
+        this.initEventListeners();
     },
 
     // deviceready Event Handler
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         // this.receivedEvent('deviceready');
 
+        this.initBeaconSearch();
+    },
 
-        function onPrompt(results) {
-            alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
-            var postURL = "https://stud.hosted.hr.nl/0874349/exterion/service/";
-            var deviceId = device.uuid;
+    initEventListeners: function () {
+        var ageInput = document.querySelector('#age-input');
+        var saveBtn = document.querySelector('#save-btn');
+        var intrestList = document.querySelectorAll('.interest');
+        var radios = document.querySelectorAll('.segment__input');
+        var that = this;
 
-            cordovaHTTP.post(postURL, {
-                "UUID": result.region.identifier,
-                "contentID": "01",
-                "timeStamp": new Date().toLocaleString(),
-                "userDeviceID": deviceId
-            }, {
-                "Content-Type": "application/x-www-form-urlencoded"
-            }, function (response) {
-                cordova.plugins.locationManager.appendToDeviceLog(">>>|| HTTPREQUEST ||<<<", JSON.stringify(response));
-                console.log(">>>|| HTTPREQUEST ||<<<", JSON.stringify(response));
-            }, function (fail) {
-                cordova.plugins.locationManager.appendToDeviceLog(">>>|| HTTPREQUESTFAIL ||<<<", JSON.stringify(fail));
-                console.log(">>>|| HTTPREQUESTFAIL ||<<<", JSON.stringify(fail));
+        for (var x = 0, max = radios.length; x < max; x++) {
+            radios[x].onclick = function () {
+                that.personalisation.sex = this.value;
+            }
+        }
+
+        ageInput.addEventListener("focusout", function () {
+            that.personalisation.age = ageInput.value;
+        }, false);
+
+        for (var i = 0; i < intrestList.length; i++) {
+            document.querySelector('#' + intrestList[i].id).addEventListener('change', function () {
+                if (this.checked) {
+                    var index = that.personalisation.uncheckedItems.indexOf(this.id);
+                    var indexNumber = that.personalisation.uncheckedItemsNumbers.indexOf(Number(this.name));
+
+                    if (index > -1) {
+                        that.personalisation.uncheckedItems.splice(index, 1);
+                    }
+
+                    if (indexNumber > -1) {
+                        that.personalisation.uncheckedItemsNumbers.splice(indexNumber, 1);
+                    }
+                } else {
+                    that.personalisation.uncheckedItems.push(this.id);
+                    that.personalisation.uncheckedItemsNumbers.push(Number(this.name));
+
+                    console.log(that.personalisation.uncheckedItemsNumbers);
+                }
             });
         }
 
-        navigator.notification.prompt(
-            'Please enter your name',  // message
-            onPrompt,                  // callback to invoke
-            'Registration',            // title
-            ['Ok','Cancel'],             // buttonLabels
-            'Jane Doe'                 // defaultText
-        );
-
-        this.initBeaconSearch();
+        saveBtn.addEventListener("click", function () {
+            document.querySelector('.settings-wrapper').classList.remove('open');
+            that.initBeaconSearch();
+        }, false);
     },
 
     initBeaconSearch: function () {
@@ -76,9 +107,18 @@ var app = {
             window.scrollTo(0, window.document.height);
         };
 
+        if(this.personalisation.age) {
+            var tags = [
+
+            ]
+        }
+
         var options = {
-            disabledCategories: [],
-            tags: [],
+            disabledCategories: this.personalisation.uncheckedItemsNumbers,
+            tags: {
+                sex: this.personalisation.sex,
+                age: this.personalisation.age
+            },
             allowBackgroundScanning: true,          // Android only
             notifications: {
                 showNotifications: true,
@@ -88,15 +128,14 @@ var app = {
         };
 
         plugins.NexenSDK.startScanning(options, function (data) {
-            console.log(data);
-            logToDom(JSON.stringify(data));
+            //The scanning of beacons that are defined in the Nexen platform
             this.onLocationsLoaded();
         }, function (err) {
             console.log(err);
         });
 
         plugins.NexenSDK.onLocationsLoaded(function (data) {
-            logToDom(data.toJSON());
+            //When a user is in the beacon zone
             console.log(data);
         });
 
@@ -104,7 +143,16 @@ var app = {
             console.log(data);
         }, function (err) {
             console.log(err);
-        })
+        });
+
+        plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {
+            document.querySelector('h1').innerHTML = data.toJSON();
+            logToDom(data);
+            logToDom(data.toJSON());
+        }, (err) => {
+            console.log(err);
+            logToDom(err);
+        });
     }
 };
 

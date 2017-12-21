@@ -27,7 +27,6 @@
     _username = name;
     _password = password;
     _proximityManager = [[NXProximityManager alloc] initWithUsername:_username password:_password url:nil locale:[NSLocale currentLocale]];
-    _settingsManager = [NXSettingsManager new];
     _hasBeenBootstrapped = YES;
 }
 
@@ -51,10 +50,16 @@
 
 #pragma mark - Filters
 - (void)disableCategories:(NSArray<NSNumber *>*)categoriesToDisable {
-    for (NXProximityZoneContentCategory *category in _settingsManager.contentCategories) {
+    for (NXProximityZoneContentCategory *category in _proximityManager.settingsManager.contentCategories) {
         for (NSNumber *disabledCategory in categoriesToDisable) {
             if ([category.identifier isEqualToString:[disabledCategory stringValue]]) {
-                [_settingsManager enableContentCategory:category enabled:NO];
+                if ([_proximityManager.settingsManager contentCategoryEnabledForIdentifier: category.identifier]) {
+                    [_proximityManager.settingsManager enableContentCategory:category enabled:NO];
+                }
+            } else {
+                if (![_proximityManager.settingsManager contentCategoryEnabledForIdentifier: category.identifier]) {
+                    [_proximityManager.settingsManager enableContentCategory:category enabled:YES];
+                }
             }
         }
     }
@@ -62,17 +67,13 @@
 
 - (void)setTags:(NSDictionary *)tags {
 
-    // Clear tags if none were given
-    if (!tags || [tags count] == 0) {
-        [_settingsManager clearTags];
-        return;
-    }
+    // Clear previously stored tags
+    [_proximityManager.settingsManager clearTags];
 
     // Set all tags in the settings manager
     for (NSString *key in tags) {
-        [_settingsManager setTag:key withValue:tags[key]];
+        [_proximityManager.settingsManager setTag:key withValue:tags[key]];
     }
 }
-
 
 @end

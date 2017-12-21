@@ -133,7 +133,6 @@
         <header-file src="src/ios/main/extensions/AppDelegate+NexenSDK.h" />
         <source-file src="src/ios/main/extensions/AppDelegate+NexenSDK.m" />
 
-        <framework src="KontaktSDK" type="podspec" spec="~> 1.4.0" />
         <framework src="libs/ios/NXBeaconSDK.framework" embed="true" custom="true" />
     </platform>
 

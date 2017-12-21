@@ -35,7 +35,7 @@ ext.postBuildExtras = {
 
 dependencies {
    compile(name:'NexenSDK-Release', ext:'aar')
-   compile 'org.altbeacon:android-beacon-library:2.9.1'
+   compile 'org.altbeacon:android-beacon-library:2.12.3'
    compile 'com.google.android.gms:play-services-location:8.4.0'
    compile 'com.android.support:support-v4:23.2.1'
    compile 'org.altbeacon:android-beacon-library:2.9.1'

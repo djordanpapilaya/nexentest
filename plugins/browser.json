@@ -31,6 +31,9 @@
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
     }
   },
   "dependent_plugins": {

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		06FAC4A34344472BBC2BB3F1 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0AAD86024A4455907683ED /* AFURLSessionManager.m */; };
@@ -39,6 +38,7 @@
 		EDEC411B1FA0CB4F0069ED0A /* KontaktSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC411A1FA0CB4F0069ED0A /* KontaktSDK.framework */; };
 		EDEC411D1FA0CB560069ED0A /* KontaktSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC411C1FA0CB560069ED0A /* KontaktSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1DCFB3BC0A042F2A077B22D /* NSBundle+plist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA7BEB9D13D4866ACEA1A38 /* NSBundle+plist.m */; };
+		C3E2702094E54BA4B766A330 /* NativeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA479BDAE4BE418F922450DE /* NativeStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +144,8 @@
 		FBEC394DB9574DE5AF06A11A /* AFNetworking.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = "cordova-plugin-http/AFNetworking.h"; sourceTree = "<group>"; };
 		FDFE435EF112440595F37E37 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FE0AAD86024A4455907683ED /* AFURLSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = "cordova-plugin-http/AFURLSessionManager.m"; sourceTree = "<group>"; };
+		EA479BDAE4BE418F922450DE /* NativeStorage.m */ = {isa = PBXFileReference; name = "NativeStorage.m"; path = "cordova-plugin-nativestorage/NativeStorage.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		486C6909EBC746009FD2BA02 /* NativeStorage.h */ = {isa = PBXFileReference; name = "NativeStorage.h"; path = "cordova-plugin-nativestorage/NativeStorage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,8 @@
 				5F830A7634A54ADFB8F20829 /* AFURLSessionManager.h */,
 				E389568ABE004B288ED5BA01 /* CDVDevice.m */,
 				DDC9C528C44D42E793BFAC48 /* CDVDevice.h */,
+				EA479BDAE4BE418F922450DE /* NativeStorage.m */,
+				486C6909EBC746009FD2BA02 /* NativeStorage.h */,
 			);
 			name = Plugins;
 			path = "Exterion News/Plugins";
@@ -443,6 +447,7 @@
 				12D4EF0168284868B10AD0D8 /* AFURLResponseSerialization.m in Sources */,
 				06FAC4A34344472BBC2BB3F1 /* AFURLSessionManager.m in Sources */,
 				2F36B5CE5A674C7FA3F1FDA5 /* CDVDevice.m in Sources */,
+				C3E2702094E54BA4B766A330 /* NativeStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

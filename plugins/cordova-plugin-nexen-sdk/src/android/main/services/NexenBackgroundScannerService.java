@@ -31,6 +31,7 @@ import be.wearenexen.network.response.beacon.NexenBeaconZone;
 public class NexenBackgroundScannerService extends Service implements NexenServiceInterface {
 
     public static final String OPTIONS_KEY = "be.wearenexen.cordova.OPTIONS_KEY";
+    public static final String OPTIONS_ITEM_KEY = "options";
 
     private final IBinder mBinder = new LocalBinder();
 
@@ -129,19 +130,35 @@ public class NexenBackgroundScannerService extends Service implements NexenServi
     }
 
     private void cacheOptions() {
+
+        // Check if the options can be cached
+        if (mOptions == null || mOptions.getAsJsonObject() == null) {
+            return;
+        }
+
+        // Cache the options
         SharedPreferences prefs = getApplicationContext().getSharedPreferences(OPTIONS_KEY, Context.MODE_PRIVATE);
-        prefs.edit().putString("options", mOptions.getAsJsonObject().toString()).apply();
+        prefs.edit().putString(OPTIONS_ITEM_KEY, mOptions.getAsJsonObject().toString()).apply();
         Log.d("NEXEN", "Cached the following options: " + mOptions.getAsJsonObject().toString());
     }
 
     private void restoreOptions() {
+
+        // Get the previously stored options
         SharedPreferences prefs = getApplicationContext().getSharedPreferences(OPTIONS_KEY, Context.MODE_PRIVATE);
-        String optionsAsJson = prefs.getString("options", "");
+        String optionsAsJson = prefs.getString(OPTIONS_ITEM_KEY, "");
+
+        // Try to restore them
         try {
             JSONObject parsedOptions = new JSONObject(optionsAsJson);
             mOptions = new Options(parsedOptions);
             Log.d("NEXEN", "Restored the following options: " + parsedOptions.toString());
         } catch (JSONException e) {
+            mOptions = new Options();
+        }
+
+        // Fail-safe check
+        if (mOptions == null) {
             mOptions = new Options();
         }
     }

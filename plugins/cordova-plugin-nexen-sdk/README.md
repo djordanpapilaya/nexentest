@@ -96,8 +96,8 @@ The URL is passed onto Cordova.
 When starting the plugin the following options payload can be passed:
 
     var options = {
-        disabledCategories: [],
-        tags: [],
+        disabledCategories: [], // e.g. [2, 3]
+        tags: {}, // e.g. { gender: "male", age: 25 } - atm we do not support a nullable "tags"-property
         allowBackgroundScanning: true,			// Android only
         notifications: {
             showNotifications: true,
@@ -105,3 +105,5 @@ When starting the plugin the following options payload can be passed:
             smallIconName: "notification_icon"	// Android only
         }
     };
+
+Categories: [values](www/NexenConstants.js)
