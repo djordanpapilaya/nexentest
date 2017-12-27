@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.annotation.StringDef;
 
-import com.exterion.exterionnews.BuildConfig;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -24,7 +22,8 @@ import java.lang.annotation.RetentionPolicy;
  */
 public class SettingsManager {
 
-    private static final String GLOBAL_SETTINGS_KEY = BuildConfig.APPLICATION_ID + ".SETTINGS";
+    private static final String PACKAGE = "be.wearenexen.cordova";
+    private static final String GLOBAL_SETTINGS_KEY = PACKAGE + ".SETTINGS";
 
     private SharedPreferences mSharedPreferences;
 
@@ -35,9 +34,9 @@ public class SettingsManager {
     })
     @Retention(RetentionPolicy.SOURCE)
     public @interface Setting {
-        String HAS_STARTED_SCANNING_ONCE = BuildConfig.APPLICATION_ID + ".HAS_STARTED_SCANNING_ONCE";
-        String HAS_URL_TASK_KEY = BuildConfig.APPLICATION_ID + ".HAS_URL_TASK_KEY";
-        String URL_PERSIST_KEY = BuildConfig.APPLICATION_ID + ".URL_PERSIST_KEY";
+        String HAS_STARTED_SCANNING_ONCE = PACKAGE + ".HAS_STARTED_SCANNING_ONCE";
+        String HAS_URL_TASK_KEY = PACKAGE + ".HAS_URL_TASK_KEY";
+        String URL_PERSIST_KEY = PACKAGE + ".URL_PERSIST_KEY";
     }
 
     public SettingsManager(Context context) {

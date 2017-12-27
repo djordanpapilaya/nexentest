@@ -22,17 +22,17 @@
     "cordova-plugin-http": {
       "PACKAGE_NAME": "com.exterion.exterionnews"
     },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
     "cordova-plugin-nexen-sdk": {
       "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
       "APP_NAME": "ExterionNewsApp",
       "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
       "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring",
-      "PACKAGE_NAME": "com.exterion.exterionnews"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.exterion.exterionnews"
-    },
-    "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "com.exterion.exterionnews"
     }
   },

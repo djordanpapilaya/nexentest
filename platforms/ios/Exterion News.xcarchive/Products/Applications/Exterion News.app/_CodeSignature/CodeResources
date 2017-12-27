@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		5U0stiELo5lsGvCmmVx+zvUsM3s=
+		pvg7X5T0lHB1WvNlkpEsq4SZFfo=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		AVFi75GrCcfRPgcXKLXdzXxwPZg=
+		rIvRlkmEAQ3wpXGjHCUUd0Y1YVE=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		UL0FDvE+94wEbsWnIFG3z3mP0E0=
+		BfFCfhhdpp00qYNJGHHqitK4dMA=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -127,7 +127,7 @@
 		</data>
 		<key>Frameworks/KontaktSDK.framework/KontaktSDK</key>
 		<data>
-		uYrWa/Bo3jw/bS23FBjzj0FuCmo=
+		ZQvpyno7afX93JMsWbC1P7NyFCo=
 		</data>
 		<key>Frameworks/KontaktSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -200,7 +200,7 @@
 		</data>
 		<key>Frameworks/NXBeaconSDK.framework/Info.plist</key>
 		<data>
-		AXW+7ju28ztVTtzsEwb8zjo+tF4=
+		NCDAg5ffM+DpkF4kcONJDyHUQOI=
 		</data>
 		<key>Frameworks/NXBeaconSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -208,15 +208,15 @@
 		</data>
 		<key>Frameworks/NXBeaconSDK.framework/NXBeaconSDK</key>
 		<data>
-		keeXXaMXq8afd7HxdDmwVlhvfT4=
+		x9adgIPJBaHc794YO6XZd0hgMk0=
 		</data>
 		<key>Frameworks/NXBeaconSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		fSKcBWYqZflTtjdcWQ9mKg0jpnc=
+		z923WVuIw5B+f7noM0b6z4jHULU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nb3o/QYrRrmTdmg/GYQdu7sREIU=
+		YhywRq4VTHuH6Gw4sk5c+qdh0Yw=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -276,7 +276,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		42wshSOMeIvQzKYuoPfBTgu2Taw=
+		CMJMPwVsRbPWyRLGdB/+t1lvS/Q=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -288,7 +288,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		92klWiAxIpXsCHn3OBu2SPVM+qk=
+		gEd6//iDbU9oYq27oPx+fwZtCjw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -316,7 +316,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		3uRRVDzmIroch2MfQ503mrI0Vok=
+		KtYlcrodynOt4UgnBZWTWQLs8MM=
 		</data>
 		<key>www/css/index.css</key>
 		<data>
@@ -340,7 +340,7 @@
 		</data>
 		<key>www/js/index.js</key>
 		<data>
-		mDbHwCu1Zpf+MRf5cgAxWqvGze4=
+		jBsZLKtxynJWhc6MR52EfLvWdCI=
 		</data>
 		<key>www/plugins/cordova-plugin-device/www/device.js</key>
 		<data>
@@ -456,7 +456,7 @@
 		</data>
 		<key>www/plugins/cordova-plugin-nexen-sdk/www/NexenSDK.js</key>
 		<data>
-		jzT3eSU6QiMBCzx4tkJYRDq+2LM=
+		iJ1KyuTsBpKTXmLDrQtZzM9JSys=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -685,22 +685,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5U0stiELo5lsGvCmmVx+zvUsM3s=
+			pvg7X5T0lHB1WvNlkpEsq4SZFfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			TfgHYoecGdbJVxdj0w2fNdekVFDVgwKM4oJ6vrr0560=
+			Vc3nLdiXb+zRdN2dS9GkC5x3I1MK1a3PyvrgVf4ZSFk=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AVFi75GrCcfRPgcXKLXdzXxwPZg=
+			rIvRlkmEAQ3wpXGjHCUUd0Y1YVE=
 			</data>
 			<key>hash2</key>
 			<data>
-			A/vfVEsHLQIVR8n4OfgIodVhqY5/TNu+BOumYeG92xU=
+			Puh9P4hTDAKxZ1Tp9YZ75Mo0FTGnJkP37FrQ8R/J46c=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -718,11 +718,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UL0FDvE+94wEbsWnIFG3z3mP0E0=
+			BfFCfhhdpp00qYNJGHHqitK4dMA=
 			</data>
 			<key>hash2</key>
 			<data>
-			3nTDwelFZl3l5/PhnwowwB/l55pah+CBnTxn0NjzuhU=
+			XT/zOydONuhDi+31br2sHib9ctgtHJdJSoHO2fs+wBQ=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -786,11 +786,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uYrWa/Bo3jw/bS23FBjzj0FuCmo=
+			ZQvpyno7afX93JMsWbC1P7NyFCo=
 			</data>
 			<key>hash2</key>
 			<data>
-			5NKwr6FpbY5tF1YHj37gzSmq42yHkams2EzLq6TfILQ=
+			tmuZxV+2BNJMY22I78x7p+b5CtPKetkrxe+NnjGMIAw=
 			</data>
 		</dict>
 		<key>Frameworks/KontaktSDK.framework/_CodeSignature/CodeResources</key>
@@ -975,11 +975,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AXW+7ju28ztVTtzsEwb8zjo+tF4=
+			NCDAg5ffM+DpkF4kcONJDyHUQOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			/223wgmfewKI8lHVjMAMgwK8RIu6eO12zrt70T3Wols=
+			9JBysurS/jtPMBUQNPgp/3Qrc65nPNHSdRmPBwYFp10=
 			</data>
 		</dict>
 		<key>Frameworks/NXBeaconSDK.framework/Modules/module.modulemap</key>
@@ -997,22 +997,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			keeXXaMXq8afd7HxdDmwVlhvfT4=
+			x9adgIPJBaHc794YO6XZd0hgMk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			2TnNMmFrNellMrfT1FF7Uur7uV9b63C/6dXFv581IYU=
+			3YDRyAdEFBC1rbA6QaydSPlODv8S9ieTzLnqp9tR+BY=
 			</data>
 		</dict>
 		<key>Frameworks/NXBeaconSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fSKcBWYqZflTtjdcWQ9mKg0jpnc=
+			z923WVuIw5B+f7noM0b6z4jHULU=
 			</data>
 			<key>hash2</key>
 			<data>
-			+E+GqCy6M/aY8/ohRxkea3gjunosBw+xINdm+DFEC7Q=
+			J0tWWCnUH28tZcUHvsvVcMoNv6CxTIZlhaJM09PlBlc=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1173,11 +1173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			42wshSOMeIvQzKYuoPfBTgu2Taw=
+			CMJMPwVsRbPWyRLGdB/+t1lvS/Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			qGurFr8XFyChuog5ljPd9qMhONh09jLAEhGzGSCff/g=
+			3L+AwHFZJ64EE7pOBmT+huoTRc9P9CHjZkQTos3Iv74=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1195,11 +1195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			92klWiAxIpXsCHn3OBu2SPVM+qk=
+			gEd6//iDbU9oYq27oPx+fwZtCjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zvAJbW8/mwmjJ0Cop14ohczpNteK5DGRxkZ9fnfHaao=
+			p7HZwX1RKdgQOemq6i1ZWTJP+XQoWq88Tofwlu13O+k=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -1272,11 +1272,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3uRRVDzmIroch2MfQ503mrI0Vok=
+			KtYlcrodynOt4UgnBZWTWQLs8MM=
 			</data>
 			<key>hash2</key>
 			<data>
-			LC+JKRcfRGjv/6DDIbq9lgHAEBXJMSMZmFG+O8QyRGQ=
+			ABRaX+PDZZH4+GGGJwTuJgR2W/26XebSXggD7dKbPRs=
 			</data>
 		</dict>
 		<key>www/css/index.css</key>
@@ -1338,11 +1338,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mDbHwCu1Zpf+MRf5cgAxWqvGze4=
+			jBsZLKtxynJWhc6MR52EfLvWdCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			K/dIs/A8GTXL/S7jtqSDf8ic60Kyf66uEVTeCZ4AG8g=
+			Xe3x5vuUhTy53Ebdm4yUDRnxrvJoe9Gfk7OfWvMPNJ4=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-device/www/device.js</key>
@@ -1657,11 +1657,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jzT3eSU6QiMBCzx4tkJYRDq+2LM=
+			iJ1KyuTsBpKTXmLDrQtZzM9JSys=
 			</data>
 			<key>hash2</key>
 			<data>
-			PyifXvNDcyqQQa0zyD2ljVMm/1O4oRXF/ASunW27EtA=
+			kZLjUWhRY70AHlQOKONCdNJxUW7SjIHtMatgEsP6iuY=
 			</data>
 		</dict>
 	</dict>

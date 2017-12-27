@@ -47,7 +47,7 @@
     }
 
     // Ask location permission
-    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse) {
         [_locationManager requestAlwaysAuthorization];
     } else {
         _locationManager = nil; // We only need the locationmanager for asking permissions in this class
@@ -57,10 +57,6 @@
 
 - (void)startAfterPermissionsGranted {
     [self.commandDelegate runInBackground:^{
-
-        // Apply options
-        [[BeaconManager sharedInstance] setTags:_tags];
-        [[BeaconManager sharedInstance] disableCategories:_disabledCategories];
 
         // Start scanning for beacons
         [[BeaconManager sharedInstance] start:^(NSError * _Nonnull error) {
@@ -73,6 +69,10 @@
                 return;
             }
 
+            // Apply options
+            [[BeaconManager sharedInstance] setTags:_tags];
+            [[BeaconManager sharedInstance] disableCategories:_disabledCategories];
+            
             // Send the result
             result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
             [self.commandDelegate sendPluginResult:result callbackId:[_callbackIds objectForKey:NXCordovaStartCallbackKey]];

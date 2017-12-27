@@ -206,14 +206,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-nexen-sdk.NexenSDK",
-    "file": "plugins/cordova-plugin-nexen-sdk/www/NexenSDK.js",
-    "pluginId": "cordova-plugin-nexen-sdk",
-    "clobbers": [
-      "plugins.NexenSDK"
-    ]
-  },
-  {
     "id": "cordova-plugin-nativestorage.mainHandle",
     "file": "plugins/cordova-plugin-nativestorage/www/mainHandle.js",
     "pluginId": "cordova-plugin-nativestorage",
@@ -230,6 +222,14 @@ module.exports = [
     "id": "cordova-plugin-nativestorage.NativeStorageError",
     "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
     "pluginId": "cordova-plugin-nativestorage"
+  },
+  {
+    "id": "cordova-plugin-nexen-sdk.NexenSDK",
+    "file": "plugins/cordova-plugin-nexen-sdk/www/NexenSDK.js",
+    "pluginId": "cordova-plugin-nexen-sdk",
+    "clobbers": [
+      "plugins.NexenSDK"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -241,9 +241,9 @@ module.exports.metadata =
   "cordova-plugin-dialogs": "1.3.3",
   "cordova-plugin-file": "4.3.3",
   "cordova-plugin-http": "1.2.0",
-  "cordova-plugin-nexen-sdk": "0.0.1",
   "cordova-plugin-whitelist": "1.3.2",
-  "cordova-plugin-nativestorage": "2.2.2"
+  "cordova-plugin-nativestorage": "2.2.2",
+  "cordova-plugin-nexen-sdk": "0.0.1"
 };
 // BOTTOM OF METADATA
 });

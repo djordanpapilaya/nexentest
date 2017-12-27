@@ -1,17 +1,4 @@
 {
-  "cordova-plugin-nexen-sdk": {
-    "source": {
-      "type": "local",
-      "path": "/Users/djordanpapilaya/afstudeer-tech-projecten/nexentest/node_modules/cordova-plugin-nexen-sdk"
-    },
-    "is_top_level": true,
-    "variables": {
-      "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
-      "APP_NAME": "ExterionNewsApp",
-      "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
-      "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring"
-    }
-  },
   "cordova-plugin-compat": {
     "source": {
       "type": "registry",
@@ -83,5 +70,18 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-nexen-sdk": {
+    "source": {
+      "type": "local",
+      "path": "/Users/djordanpapilaya/afstudeer-tech-projecten/nexentest/node_modules/cordova-plugin-nexen-sdk"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
+      "APP_NAME": "ExterionNewsApp",
+      "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
+      "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring"
+    }
   }
 }

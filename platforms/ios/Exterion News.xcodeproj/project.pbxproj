@@ -16,7 +16,6 @@
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		3CFACE41551F4329BF4DBF21 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9E814A7E2441C1996095B8 /* BeaconManager.m */; };
 		4EBDC2C10A6F45D78E81873F /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70BD7AB16CA0471F8A203236 /* CDVNotification.bundle */; };
 		5AA82EF9AF4F406B93C7B02C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFE435EF112440595F37E37 /* libz.tbd */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
@@ -27,18 +26,20 @@
 		9C0585CA20354C8C856D8BBD /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF1AB4EDB54087A915B904 /* AFNetworkReachabilityManager.m */; };
 		A517536F0AE649FF9FFA2E81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5204CFCF3D4CE797A5C57C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A637178BC6CF4285802DB0D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCCA9F3D169490EAFB06937 /* Security.framework */; };
-		B4F5290D27934496A023A7C3 /* NexenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0492C6B23244849AE1DA9A /* NexenSDK.m */; };
+		C3E2702094E54BA4B766A330 /* NativeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA479BDAE4BE418F922450DE /* NativeStorage.m */; };
 		CCD2C2C7701B4CE685A717CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D89490159714F03A3556DA1 /* SystemConfiguration.framework */; };
 		CD522F0A3DA948649BE4A504 /* CordovaHttpPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E950688A9AC44C2384201C15 /* CordovaHttpPlugin.m */; };
 		D94A1F8496EC476BBD79CDD4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE49C518FF0490A99CCE38A /* AFHTTPSessionManager.m */; };
-		DE640171477E46D09E599955 /* AppDelegate+NexenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52419689D64FEEB6F903B7 /* AppDelegate+NexenSDK.m */; };
 		E4FD7653AABD4364B276AFFF /* TextResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9A422D90C5464B9FA36F1A /* TextResponseSerializer.m */; };
 		E6FA4C36E28E49759AAF8277 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3C6461F33E449AA1A01400 /* CDVLocalFilesystem.m */; };
-		EC81BF6BA9F649F88DEDB4BA /* NXBeaconSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF1D950475184DB38D1CC4BF /* NXBeaconSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EDEC411B1FA0CB4F0069ED0A /* KontaktSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC411A1FA0CB4F0069ED0A /* KontaktSDK.framework */; };
 		EDEC411D1FA0CB560069ED0A /* KontaktSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC411C1FA0CB560069ED0A /* KontaktSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F1DCFB3BC0A042F2A077B22D /* NSBundle+plist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA7BEB9D13D4866ACEA1A38 /* NSBundle+plist.m */; };
-		C3E2702094E54BA4B766A330 /* NativeStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA479BDAE4BE418F922450DE /* NativeStorage.m */; };
+		7B84462197D8455BB312EB2C /* NexenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DB91F147814F2F80CBF65D /* NexenSDK.m */; };
+		D447E269DEE148CBADEEA053 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E25A4E504CE597BAA87F /* BeaconManager.m */; };
+		95792D3775724FCF869774AE /* NSBundle+plist.m in Sources */ = {isa = PBXBuildFile; fileRef = D35DFFB56F5642A286052A1C /* NSBundle+plist.m */; };
+		1B5C967C8B964F0E9185751C /* AppDelegate+NexenSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E05DA0F5E40846FAA901DAAF /* AppDelegate+NexenSDK.m */; };
+		37A91BDCDF12495DB47F2EBC /* NXBeaconSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D171B2837D5F4E34A061BA26 /* NXBeaconSDK.framework */; };
+		D44FE65EEDCD4ECA9986927A /* NXBeaconSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D171B2837D5F4E34A061BA26 /* NXBeaconSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 			files = (
 				EC81BF6BA9F649F88DEDB4BA /* NXBeaconSDK.framework in Embed Frameworks */,
 				EDEC411D1FA0CB560069ED0A /* KontaktSDK.framework in Embed Frameworks */,
+				D44FE65EEDCD4ECA9986927A /* NXBeaconSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,10 +103,8 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* Exterion News-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Exterion News-Prefix.pch"; sourceTree = "<group>"; };
-		3A8047B2F4044EA2941B8802 /* BeaconManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BeaconManager.h; path = "cordova-plugin-nexen-sdk/BeaconManager.h"; sourceTree = "<group>"; };
-		3E52419689D64FEEB6F903B7 /* AppDelegate+NexenSDK.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+NexenSDK.m"; path = "cordova-plugin-nexen-sdk/AppDelegate+NexenSDK.m"; sourceTree = "<group>"; };
 		3F5204CFCF3D4CE797A5C57C /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		49BDE4891008488497D4B79C /* NexenSDK.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NexenSDK.h; path = "cordova-plugin-nexen-sdk/NexenSDK.h"; sourceTree = "<group>"; };
+		486C6909EBC746009FD2BA02 /* NativeStorage.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NativeStorage.h; path = "cordova-plugin-nativestorage/NativeStorage.h"; sourceTree = "<group>"; };
 		4E7AFBA7F3E54C1084CC6CF4 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = "cordova-plugin-http/AFSecurityPolicy.h"; sourceTree = "<group>"; };
 		565DE6F277A04C2689ADF689 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocalFilesystem.h; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; };
 		5D89490159714F03A3556DA1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -113,39 +113,41 @@
 		6AA387DFEE46467FB773EB9D /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = "cordova-plugin-http/AFURLRequestSerialization.m"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Exterion News/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		70BD7AB16CA0471F8A203236 /* CDVNotification.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
-		7BA7BEB9D13D4866ACEA1A38 /* NSBundle+plist.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+plist.m"; path = "cordova-plugin-nexen-sdk/NSBundle+plist.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Exterion News-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Exterion News-Info.plist"; path = "Exterion News/Exterion News-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
 		8E80FA09D39D4D7DA962F271 /* CDVNotification.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVNotification.m; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; };
-		9F7B2D5E0B34463DBC1B6A91 /* NSBundle+plist.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSBundle+plist.h"; path = "cordova-plugin-nexen-sdk/NSBundle+plist.h"; sourceTree = "<group>"; };
 		A9AF1AB4EDB54087A915B904 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = "cordova-plugin-http/AFNetworkReachabilityManager.m"; sourceTree = "<group>"; };
 		B96C35ABC92E4F26975FC067 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVAssetLibraryFilesystem.h; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; };
 		BB9A422D90C5464B9FA36F1A /* TextResponseSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TextResponseSerializer.m; path = "cordova-plugin-http/TextResponseSerializer.m"; sourceTree = "<group>"; };
 		C5EC93D00B514709B759F697 /* TextResponseSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextResponseSerializer.h; path = "cordova-plugin-http/TextResponseSerializer.h"; sourceTree = "<group>"; };
 		CD3C6461F33E449AA1A01400 /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocalFilesystem.m; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; };
-		CF0492C6B23244849AE1DA9A /* NexenSDK.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NexenSDK.m; path = "cordova-plugin-nexen-sdk/NexenSDK.m"; sourceTree = "<group>"; };
 		DDC9C528C44D42E793BFAC48 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
 		DFE49C518FF0490A99CCE38A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = "cordova-plugin-http/AFHTTPSessionManager.m"; sourceTree = "<group>"; };
 		E15C656FA51E4F3A8BB66FF8 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = "cordova-plugin-http/AFHTTPSessionManager.h"; sourceTree = "<group>"; };
 		E389568ABE004B288ED5BA01 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
 		E6FB6DAA58214908841F6899 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = "cordova-plugin-http/AFURLResponseSerialization.m"; sourceTree = "<group>"; };
 		E950688A9AC44C2384201C15 /* CordovaHttpPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CordovaHttpPlugin.m; path = "cordova-plugin-http/CordovaHttpPlugin.m"; sourceTree = "<group>"; };
+		EA479BDAE4BE418F922450DE /* NativeStorage.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NativeStorage.m; path = "cordova-plugin-nativestorage/NativeStorage.m"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		EBCCA9F3D169490EAFB06937 /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		EBD19825C0BB4C5293A92C7F /* AppDelegate+NexenSDK.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+NexenSDK.h"; path = "cordova-plugin-nexen-sdk/AppDelegate+NexenSDK.h"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		EDEC411A1FA0CB4F0069ED0A /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KontaktSDK.framework; path = ../../../assets/KontaktSDK.framework; sourceTree = "<group>"; };
 		EDEC411C1FA0CB560069ED0A /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KontaktSDK.framework; sourceTree = "<group>"; };
-		EF1D950475184DB38D1CC4BF /* NXBeaconSDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = NXBeaconSDK.framework; path = "Exterion News/Plugins/cordova-plugin-nexen-sdk/NXBeaconSDK.framework"; sourceTree = "<group>"; };
-		EF9E814A7E2441C1996095B8 /* BeaconManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BeaconManager.m; path = "cordova-plugin-nexen-sdk/BeaconManager.m"; sourceTree = "<group>"; };
 		F4305F7C97F647FF9375EB53 /* CordovaHttpPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CordovaHttpPlugin.h; path = "cordova-plugin-http/CordovaHttpPlugin.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Exterion News/config.xml"; sourceTree = "<group>"; };
 		FAB33FB2E4C24596AC3882A3 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = "cordova-plugin-http/AFSecurityPolicy.m"; sourceTree = "<group>"; };
 		FBEC394DB9574DE5AF06A11A /* AFNetworking.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = "cordova-plugin-http/AFNetworking.h"; sourceTree = "<group>"; };
 		FDFE435EF112440595F37E37 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FE0AAD86024A4455907683ED /* AFURLSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = "cordova-plugin-http/AFURLSessionManager.m"; sourceTree = "<group>"; };
-		EA479BDAE4BE418F922450DE /* NativeStorage.m */ = {isa = PBXFileReference; name = "NativeStorage.m"; path = "cordova-plugin-nativestorage/NativeStorage.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		486C6909EBC746009FD2BA02 /* NativeStorage.h */ = {isa = PBXFileReference; name = "NativeStorage.h"; path = "cordova-plugin-nativestorage/NativeStorage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F4DB91F147814F2F80CBF65D /* NexenSDK.m */ = {isa = PBXFileReference; name = "NexenSDK.m"; path = "cordova-plugin-nexen-sdk/NexenSDK.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		87B1E25A4E504CE597BAA87F /* BeaconManager.m */ = {isa = PBXFileReference; name = "BeaconManager.m"; path = "cordova-plugin-nexen-sdk/BeaconManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D35DFFB56F5642A286052A1C /* NSBundle+plist.m */ = {isa = PBXFileReference; name = "NSBundle+plist.m"; path = "cordova-plugin-nexen-sdk/NSBundle+plist.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E05DA0F5E40846FAA901DAAF /* AppDelegate+NexenSDK.m */ = {isa = PBXFileReference; name = "AppDelegate+NexenSDK.m"; path = "cordova-plugin-nexen-sdk/AppDelegate+NexenSDK.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		17ED0F74FA254E5586CF62EE /* NexenSDK.h */ = {isa = PBXFileReference; name = "NexenSDK.h"; path = "cordova-plugin-nexen-sdk/NexenSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		572FC3176D9B4AE8ACC70B1D /* BeaconManager.h */ = {isa = PBXFileReference; name = "BeaconManager.h"; path = "cordova-plugin-nexen-sdk/BeaconManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C43F2427B6A94417B2E8DAE1 /* NSBundle+plist.h */ = {isa = PBXFileReference; name = "NSBundle+plist.h"; path = "cordova-plugin-nexen-sdk/NSBundle+plist.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EECEF48B75E745D49D83FC42 /* AppDelegate+NexenSDK.h */ = {isa = PBXFileReference; name = "AppDelegate+NexenSDK.h"; path = "cordova-plugin-nexen-sdk/AppDelegate+NexenSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D171B2837D5F4E34A061BA26 /* NXBeaconSDK.framework */ = {isa = PBXFileReference; name = "NXBeaconSDK.framework"; path = "Exterion News/Plugins/cordova-plugin-nexen-sdk/NXBeaconSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,11 +234,11 @@
 			isa = PBXGroup;
 			children = (
 				EDEC411A1FA0CB4F0069ED0A /* KontaktSDK.framework */,
-				EF1D950475184DB38D1CC4BF /* NXBeaconSDK.framework */,
 				3F5204CFCF3D4CE797A5C57C /* AudioToolbox.framework */,
 				EBCCA9F3D169490EAFB06937 /* Security.framework */,
 				5D89490159714F03A3556DA1 /* SystemConfiguration.framework */,
 				FDFE435EF112440595F37E37 /* libz.tbd */,
+				D171B2837D5F4E34A061BA26 /* NXBeaconSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -263,14 +265,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				CF0492C6B23244849AE1DA9A /* NexenSDK.m */,
-				EF9E814A7E2441C1996095B8 /* BeaconManager.m */,
-				7BA7BEB9D13D4866ACEA1A38 /* NSBundle+plist.m */,
-				3E52419689D64FEEB6F903B7 /* AppDelegate+NexenSDK.m */,
-				49BDE4891008488497D4B79C /* NexenSDK.h */,
-				3A8047B2F4044EA2941B8802 /* BeaconManager.h */,
-				9F7B2D5E0B34463DBC1B6A91 /* NSBundle+plist.h */,
-				EBD19825C0BB4C5293A92C7F /* AppDelegate+NexenSDK.h */,
 				8E80FA09D39D4D7DA962F271 /* CDVNotification.m */,
 				1CB5F95468874B33B4C6DEBB /* CDVNotification.h */,
 				6A8D44FE702E4C0596171994 /* CDVFile.m */,
@@ -300,6 +294,14 @@
 				DDC9C528C44D42E793BFAC48 /* CDVDevice.h */,
 				EA479BDAE4BE418F922450DE /* NativeStorage.m */,
 				486C6909EBC746009FD2BA02 /* NativeStorage.h */,
+				F4DB91F147814F2F80CBF65D /* NexenSDK.m */,
+				87B1E25A4E504CE597BAA87F /* BeaconManager.m */,
+				D35DFFB56F5642A286052A1C /* NSBundle+plist.m */,
+				E05DA0F5E40846FAA901DAAF /* AppDelegate+NexenSDK.m */,
+				17ED0F74FA254E5586CF62EE /* NexenSDK.h */,
+				572FC3176D9B4AE8ACC70B1D /* BeaconManager.h */,
+				C43F2427B6A94417B2E8DAE1 /* NSBundle+plist.h */,
+				EECEF48B75E745D49D83FC42 /* AppDelegate+NexenSDK.h */,
 			);
 			name = Plugins;
 			path = "Exterion News/Plugins";
@@ -343,7 +345,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 510;
+				LastUpgradeCheck = 920;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 2L5ZZGL2B8;
@@ -430,10 +432,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				B4F5290D27934496A023A7C3 /* NexenSDK.m in Sources */,
-				3CFACE41551F4329BF4DBF21 /* BeaconManager.m in Sources */,
-				F1DCFB3BC0A042F2A077B22D /* NSBundle+plist.m in Sources */,
-				DE640171477E46D09E599955 /* AppDelegate+NexenSDK.m in Sources */,
 				8D1905512E5140CCA8235AD8 /* CDVNotification.m in Sources */,
 				85F8DC7AAE8E4E4B80F54CA0 /* CDVFile.m in Sources */,
 				E6FA4C36E28E49759AAF8277 /* CDVLocalFilesystem.m in Sources */,
@@ -448,6 +446,10 @@
 				06FAC4A34344472BBC2BB3F1 /* AFURLSessionManager.m in Sources */,
 				2F36B5CE5A674C7FA3F1FDA5 /* CDVDevice.m in Sources */,
 				C3E2702094E54BA4B766A330 /* NativeStorage.m in Sources */,
+				7B84462197D8455BB312EB2C /* NexenSDK.m in Sources */,
+				D447E269DEE148CBADEEA053 /* BeaconManager.m in Sources */,
+				95792D3775724FCF869774AE /* NSBundle+plist.m in Sources */,
+				1B5C967C8B964F0E9185751C /* AppDelegate+NexenSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +479,7 @@
 				DEVELOPMENT_TEAM = 2L5ZZGL2B8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"Exterion News/Plugins/cordova-plugin-nexen-sdk\"",
 					"\"Exterion News/Plugins/cordova-plugin-nexen-sdk\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -512,6 +515,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Exterion News/Plugins/cordova-plugin-nexen-sdk\"",
+					"\"Exterion News/Plugins/cordova-plugin-nexen-sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exterion News/Exterion News-Prefix.pch";
@@ -534,15 +538,28 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -560,15 +577,27 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;

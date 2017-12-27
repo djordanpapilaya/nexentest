@@ -19,10 +19,11 @@
 var app = {
     personalisation: {
         sex: "male",
-        age: "",
         uncheckedItems: [],
         uncheckedItemsNumbers: []
     },
+
+    that: this,
 
     // Application Constructor
     initialize: function () {
@@ -43,9 +44,25 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function () {
+        var that = this;
         // this.receivedEvent('deviceready');
+        console.log('ONDEVICE READY GET ITEM');
+        NativeStorage.getItem("settings", this.getSuccess, getError);
 
-        this.initBeaconSearch();
+        function getSuccess(obj) {
+            console.log('succes', obj);
+            if(obj.age) { that.personalisation.age = obj.age; }
+            if(obj.sex) { that.personalisation.sex = obj.sex; }
+
+            that.personalisation.uncheckedItemsNumbers = obj.uncheckedItemsNumbers;
+
+            that.initBeaconSearch();
+        }
+
+        function getError() {
+            console.log('ONDEVICE READY ERROR');
+            that.initBeaconSearch();
+        }
     },
 
     initEventListeners: function () {
@@ -88,9 +105,24 @@ var app = {
         }
 
         saveBtn.addEventListener("click", function () {
+            NativeStorage.setItem("settings", that.personalisation, that.setSuccess, that.setError);
             document.querySelector('.settings-wrapper').classList.remove('open');
-            that.initBeaconSearch();
+
+            plugins.NexenSDK.stopScanning((data) => {
+                console.log('START SCANNING AGAIN');
+                that.initBeaconSearch();
+            }, (err) => {
+                // Handle error
+            });
         }, false);
+    },
+
+    setSuccess: function (obj) {
+        console.log('success ', obj.toJSON());
+    },
+
+    setError: function (error) {
+        console.log('error ', error.toJSON());
     },
 
     initBeaconSearch: function () {
@@ -107,12 +139,6 @@ var app = {
             window.scrollTo(0, window.document.height);
         };
 
-        if(this.personalisation.age) {
-            var tags = [
-
-            ]
-        }
-
         var options = {
             disabledCategories: this.personalisation.uncheckedItemsNumbers,
             tags: {
@@ -126,29 +152,35 @@ var app = {
                 smallIconName: "notification_icon"  // Android only
             }
         };
+        var that = this;
 
-        plugins.NexenSDK.startScanning(options, function (data) {
-            //The scanning of beacons that are defined in the Nexen platform
+        plugins.NexenSDK.startScanning(options, (data) => {
+            // Subscribe to the plugin callbacks
+            console.log('startScanning', data);
             this.onLocationsLoaded();
-        }, function (err) {
-            console.log(err);
+            this.onProximityZoneNotification();
+        }, (err) => {
+            console.log('error startScanning ', err);
         });
 
-        plugins.NexenSDK.onLocationsLoaded(function (data) {
+        plugins.NexenSDK.onLocationsLoaded((data) => {
+            console.log('onLocationsLoaded');
             //When a user is in the beacon zone
-            console.log(data);
+            console.log(data.toJSON());
         });
 
-        plugins.NexenSDK.onProximityZoneNotification(function (data) {
-            console.log(data);
+        plugins.NexenSDK.onProximityZoneNotification((data) => {
+            console.log('onProximityZoneNotificatio', data);
         }, function (err) {
             console.log(err);
         });
 
         plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {
+            console.log('onPushNotificationTappedForZone');
             document.querySelector('h1').innerHTML = data.toJSON();
             logToDom(data);
             logToDom(data.toJSON());
+            console.log(data.toJSON());
         }, (err) => {
             console.log(err);
             logToDom(err);

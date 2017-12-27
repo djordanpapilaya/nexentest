@@ -9,10 +9,6 @@
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"NexenSDK\"><param name=\"ios-package\" value=\"NexenSDK\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
               "count": 1
             },
@@ -30,6 +26,10 @@
             },
             {
               "xml": "<feature name=\"NativeStorage\"><param name=\"ios-package\" value=\"NativeStorage\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"NexenSDK\"><param name=\"ios-package\" value=\"NexenSDK\" /></feature>",
               "count": 1
             }
           ]
@@ -92,13 +92,13 @@
           "UIStatusBarHidden": [
             {
               "xml": "<true />",
-              "count": 20
+              "count": 33
             }
           ],
           "UIViewControllerBasedStatusBarAppearance": [
             {
               "xml": "<false />",
-              "count": 20
+              "count": 33
             }
           ]
         }
@@ -107,13 +107,6 @@
   },
   "installed_plugins": {
     "cordova-plugin-compat": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-nexen-sdk": {
-      "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
-      "APP_NAME": "ExterionNewsApp",
-      "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
-      "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring",
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-plugin-whitelist": {
@@ -136,18 +129,17 @@
     },
     "cordova-plugin-nativestorage": {
       "PACKAGE_NAME": "com.exterion.exterionnews"
+    },
+    "cordova-plugin-nexen-sdk": {
+      "APP_PASSWORD": "VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR",
+      "APP_NAME": "ExterionNewsApp",
+      "LOCATION_USAGE_DESCRIPTION": "This app uses your location to track beacons.",
+      "BLUETOOTH_USAGE_DESCRIPTION": "Please allow to use Bluetooth to start beacon monitoring",
+      "PACKAGE_NAME": "com.exterion.exterionnews"
     }
   },
   "dependent_plugins": {},
   "modules": [
-    {
-      "id": "cordova-plugin-nexen-sdk.NexenSDK",
-      "file": "plugins/cordova-plugin-nexen-sdk/www/NexenSDK.js",
-      "pluginId": "cordova-plugin-nexen-sdk",
-      "clobbers": [
-        "plugins.NexenSDK"
-      ]
-    },
     {
       "id": "cordova-plugin-dialogs.notification",
       "file": "plugins/cordova-plugin-dialogs/www/notification.js",
@@ -362,17 +354,25 @@
       "id": "cordova-plugin-nativestorage.NativeStorageError",
       "file": "plugins/cordova-plugin-nativestorage/www/NativeStorageError.js",
       "pluginId": "cordova-plugin-nativestorage"
+    },
+    {
+      "id": "cordova-plugin-nexen-sdk.NexenSDK",
+      "file": "plugins/cordova-plugin-nexen-sdk/www/NexenSDK.js",
+      "pluginId": "cordova-plugin-nexen-sdk",
+      "clobbers": [
+        "plugins.NexenSDK"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-compat": "1.2.0",
-    "cordova-plugin-nexen-sdk": "0.0.1",
     "cordova-plugin-whitelist": "1.3.2",
     "cordova-custom-config": "4.0.2",
     "cordova-plugin-dialogs": "1.3.3",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-http": "1.2.0",
     "cordova-plugin-device": "1.1.6",
-    "cordova-plugin-nativestorage": "2.2.2"
+    "cordova-plugin-nativestorage": "2.2.2",
+    "cordova-plugin-nexen-sdk": "0.0.1"
   }
 }

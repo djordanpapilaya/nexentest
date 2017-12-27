@@ -31,12 +31,6 @@
     <engine name="browser" spec="^5.0.1" />
     <engine name="ios" spec="^4.5.2" />
     <engine name="android" spec="^6.3.0" />
-    <plugin name="cordova-plugin-nexen-sdk" spec="file:///Users/djordanpapilaya/afstudeer-tech-projecten/cordovaplugin">
-        <variable name="APP_PASSWORD" value="VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR" />
-        <variable name="APP_NAME" value="ExterionNewsApp" />
-        <variable name="LOCATION_USAGE_DESCRIPTION" value="This app uses your location to track beacons." />
-        <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Please allow to use Bluetooth to start beacon monitoring" />
-    </plugin>
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
     <plugin name="cordova-plugin-console" spec="^1.1.0" />
     <plugin name="cordova-custom-config" spec="^4.0.2" />
@@ -44,4 +38,10 @@
     <plugin name="cordova-plugin-http" spec="^1.2.0" />
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
     <plugin name="cordova-plugin-nativestorage" spec="^2.2.2" />
+    <plugin name="cordova-plugin-nexen-sdk" spec="file:wearenexencordova-cordovaplugin">
+        <variable name="APP_PASSWORD" value="VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR" />
+        <variable name="APP_NAME" value="ExterionNewsApp" />
+        <variable name="LOCATION_USAGE_DESCRIPTION" value="This app uses your location to track beacons." />
+        <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Please allow to use Bluetooth to start beacon monitoring" />
+    </plugin>
 </widget>
