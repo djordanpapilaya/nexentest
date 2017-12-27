@@ -35,6 +35,9 @@
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
+    <feature name="NativeStorage">
+        <param name="ios-package" value="NativeStorage" />
+    </feature>
     <name>Exterion News</name>
     <description>
         An Exterion Media application that is created to provide news and setup tests with beacons.

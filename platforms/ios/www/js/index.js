@@ -19,7 +19,6 @@
 var app = {
     personalisation: {
         sex: "male",
-        age: "",
         uncheckedItems: [],
         uncheckedItemsNumbers: []
     },
@@ -43,9 +42,25 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function () {
+        var that = this;
         // this.receivedEvent('deviceready');
+        console.log('ONDEVICE READY GET ITEM');
+        NativeStorage.getItem("settings", this.getSuccess, this.getError);
 
-        this.initBeaconSearch();
+        function getSuccess(obj) {
+            console.log('succes', obj);
+            if(obj.age) { that.personalisation.age = obj.age; }
+            if(obj.sex) { that.personalisation.sex = obj.sex; }
+
+            that.personalisation.uncheckedItemsNumbers = obj.uncheckedItemsNumbers;
+
+            that.initBeaconSearch();
+        }
+
+        function getError() {
+            console.log('ONDEVICE READY ERROR');
+            that.initBeaconSearch();
+        }
     },
 
     initEventListeners: function () {
@@ -88,9 +103,18 @@ var app = {
         }
 
         saveBtn.addEventListener("click", function () {
-            document.querySelector('.settings-wrapper').classList.remove('open');
             that.initBeaconSearch();
+            NativeStorage.setItem("settings", that.personalisation, that.setSuccess, that.setError);
+            document.querySelector('.settings-wrapper').classList.remove('open');
         }, false);
+    },
+
+    setSuccess: function (obj) {
+        console.log('success ', obj);
+    },
+
+    setError: function (error) {
+        console.log('error ', error);
     },
 
     initBeaconSearch: function () {
@@ -106,12 +130,6 @@ var app = {
 
             window.scrollTo(0, window.document.height);
         };
-
-        if(this.personalisation.age) {
-            var tags = [
-
-            ]
-        }
 
         var options = {
             disabledCategories: this.personalisation.uncheckedItemsNumbers,
