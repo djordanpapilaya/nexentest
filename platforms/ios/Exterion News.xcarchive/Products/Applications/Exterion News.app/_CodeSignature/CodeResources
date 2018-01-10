@@ -86,11 +86,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		pvg7X5T0lHB1WvNlkpEsq4SZFfo=
+		K57V/A1nGr5Tb0MFKewkH6JCdks=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		rIvRlkmEAQ3wpXGjHCUUd0Y1YVE=
+		+cJcbKjvWx/v9R5YzCmkaqVOdEs=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		BfFCfhhdpp00qYNJGHHqitK4dMA=
+		nEFLNM4wPAMRW3U29E6yhW9oyQw=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -127,7 +127,7 @@
 		</data>
 		<key>Frameworks/KontaktSDK.framework/KontaktSDK</key>
 		<data>
-		ZQvpyno7afX93JMsWbC1P7NyFCo=
+		6zYdT2FnnV5Y/ccyspN53sR+5y0=
 		</data>
 		<key>Frameworks/KontaktSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -208,7 +208,7 @@
 		</data>
 		<key>Frameworks/NXBeaconSDK.framework/NXBeaconSDK</key>
 		<data>
-		x9adgIPJBaHc794YO6XZd0hgMk0=
+		CFq8hjJNFe8TxeWeqQSxcIgG3RU=
 		</data>
 		<key>Frameworks/NXBeaconSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -216,7 +216,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YhywRq4VTHuH6Gw4sk5c+qdh0Yw=
+		JPxA11gdXFylJ0KcQ5Cy/VjxnN4=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -276,7 +276,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		CMJMPwVsRbPWyRLGdB/+t1lvS/Q=
+		mbM0+MmlXHRLJbZaCcFRux5adoM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -320,7 +320,31 @@
 		</data>
 		<key>www/css/index.css</key>
 		<data>
-		NbrpyCHkDLl4KBO53tkXQX3sARM=
+		8RmmdPxoukLhoA2n9+aGqbmyb8A=
+		</data>
+		<key>www/img/andalucia.JPG</key>
+		<data>
+		TZx+KRdhSK3i8nJsmTq5DLHfMtA=
+		</data>
+		<key>www/img/aveen.JPG</key>
+		<data>
+		SYPKfLzU7qlyjZrx2NBzcA7Y6kg=
+		</data>
+		<key>www/img/aveen1.JPG</key>
+		<data>
+		WdTYI4879QPtj8M4OB/95hSqchY=
+		</data>
+		<key>www/img/aveen2.JPG</key>
+		<data>
+		3nAN8sMiHY9FbhkXiTA9PF4QcgI=
+		</data>
+		<key>www/img/disney-coco.JPG</key>
+		<data>
+		S7wiU09T/BGNb8KCfb0i4a4A/nY=
+		</data>
+		<key>www/img/eurosport.JPG</key>
+		<data>
+		BVSBD+zF8u4rh7lppSu+PxS2vGs=
 		</data>
 		<key>www/img/icon_close.png</key>
 		<data>
@@ -334,13 +358,33 @@
 		<data>
 		MW0GF0+VJyF3L6n2kH6NKUswUL0=
 		</data>
+		<key>www/img/loreal.JPG</key>
+		<data>
+		1DAmQC7Oag6AL7w5v9v0m0FpIHw=
+		</data>
+		<key>www/img/pma.JPG</key>
+		<data>
+		YMYSZ96It2bJZclUFwhtumjhMBU=
+		</data>
+		<key>www/img/royalclub.JPG</key>
+		<data>
+		/eN0s8SDDTgOKKwOVZn8dpdO4q0=
+		</data>
+		<key>www/img/senseo.JPG</key>
+		<data>
+		skP6cnsDjLTMTNI3tskHVc00hNk=
+		</data>
+		<key>www/img/staatsloterij.JPG</key>
+		<data>
+		WlSVwTviv6Nv0RGrr4kV4Kw6PCs=
+		</data>
 		<key>www/index.html</key>
 		<data>
-		t1ZQg+R8KHoth7ph/lK0Ub5CZZQ=
+		VQ0EPZ0HZ/Y1j4SXcoqkx4FBee8=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
-		jBsZLKtxynJWhc6MR52EfLvWdCI=
+		V3vHY6cWxDjMg+24v5XHdFY1J34=
 		</data>
 		<key>www/plugins/cordova-plugin-device/www/device.js</key>
 		<data>
@@ -685,22 +729,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pvg7X5T0lHB1WvNlkpEsq4SZFfo=
+			K57V/A1nGr5Tb0MFKewkH6JCdks=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vc3nLdiXb+zRdN2dS9GkC5x3I1MK1a3PyvrgVf4ZSFk=
+			FjyX0maoKuSiX8QrGF//4nkraol2Mbi87bcIU92Si7g=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rIvRlkmEAQ3wpXGjHCUUd0Y1YVE=
+			+cJcbKjvWx/v9R5YzCmkaqVOdEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Puh9P4hTDAKxZ1Tp9YZ75Mo0FTGnJkP37FrQ8R/J46c=
+			zczpYRS6SQZtVBl1YauQOYLrAvI4ZQSjaIYXI58O3kY=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -718,11 +762,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BfFCfhhdpp00qYNJGHHqitK4dMA=
+			nEFLNM4wPAMRW3U29E6yhW9oyQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XT/zOydONuhDi+31br2sHib9ctgtHJdJSoHO2fs+wBQ=
+			j8AKzvjIUVikhr+Lipxi7XVQqB5KjTK6ymtJ6xF724Y=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -786,11 +830,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZQvpyno7afX93JMsWbC1P7NyFCo=
+			6zYdT2FnnV5Y/ccyspN53sR+5y0=
 			</data>
 			<key>hash2</key>
 			<data>
-			tmuZxV+2BNJMY22I78x7p+b5CtPKetkrxe+NnjGMIAw=
+			fa891hT+aMzsiwm39cLlRNrrSjVUZALUn7KJMCMCVTY=
 			</data>
 		</dict>
 		<key>Frameworks/KontaktSDK.framework/_CodeSignature/CodeResources</key>
@@ -997,11 +1041,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x9adgIPJBaHc794YO6XZd0hgMk0=
+			CFq8hjJNFe8TxeWeqQSxcIgG3RU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3YDRyAdEFBC1rbA6QaydSPlODv8S9ieTzLnqp9tR+BY=
+			fi+C8SniYDDNldbgSv7xwcgsRVWdeErLUZWPLPcIKxk=
 			</data>
 		</dict>
 		<key>Frameworks/NXBeaconSDK.framework/_CodeSignature/CodeResources</key>
@@ -1173,11 +1217,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CMJMPwVsRbPWyRLGdB/+t1lvS/Q=
+			mbM0+MmlXHRLJbZaCcFRux5adoM=
 			</data>
 			<key>hash2</key>
 			<data>
-			3L+AwHFZJ64EE7pOBmT+huoTRc9P9CHjZkQTos3Iv74=
+			4eE53bPb+XJsI7R9tRu8jW1ETWPyigs3KY3dKtNuKoY=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1283,11 +1327,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NbrpyCHkDLl4KBO53tkXQX3sARM=
+			8RmmdPxoukLhoA2n9+aGqbmyb8A=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVReWXIIdung4q5qYmXLA6c1cPzKAbvH/KZUfrnFs1w=
+			Sp+y8p1Hd8BIpKztC5jmL3FNiYXdYsDoczBxy4sZiWU=
+			</data>
+		</dict>
+		<key>www/img/andalucia.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TZx+KRdhSK3i8nJsmTq5DLHfMtA=
+			</data>
+			<key>hash2</key>
+			<data>
+			mQTuInPGAIhJ5kZirV/O4UZiDbkGhZvQzgWcvwJ5ccM=
+			</data>
+		</dict>
+		<key>www/img/aveen.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SYPKfLzU7qlyjZrx2NBzcA7Y6kg=
+			</data>
+			<key>hash2</key>
+			<data>
+			mc6gMbHWI+lk9lFwitXqKuNtWup1a/1XCgBk7w4h5Rs=
+			</data>
+		</dict>
+		<key>www/img/aveen1.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WdTYI4879QPtj8M4OB/95hSqchY=
+			</data>
+			<key>hash2</key>
+			<data>
+			tBG8aQLHWRQ9R+WR2qo1WOYG+SoBVylqOkoUStLwHhI=
+			</data>
+		</dict>
+		<key>www/img/aveen2.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3nAN8sMiHY9FbhkXiTA9PF4QcgI=
+			</data>
+			<key>hash2</key>
+			<data>
+			kLHoe7+eUsFIpip2HbEjKV/M5B9wILVV9YEGAs6AWGA=
+			</data>
+		</dict>
+		<key>www/img/disney-coco.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S7wiU09T/BGNb8KCfb0i4a4A/nY=
+			</data>
+			<key>hash2</key>
+			<data>
+			7l8cu5KLWk6RllPYiX1lb9+RH8bAxqnsCtvxJdrOd6o=
+			</data>
+		</dict>
+		<key>www/img/eurosport.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVSBD+zF8u4rh7lppSu+PxS2vGs=
+			</data>
+			<key>hash2</key>
+			<data>
+			NtNOtgncka2AxI3dI37JLnMqm2SLlizKrgvHRQzVNUw=
 			</data>
 		</dict>
 		<key>www/img/icon_close.png</key>
@@ -1323,26 +1433,81 @@
 			8JmHrhEr2x//0WYZDQyLdQyvokuPf/rAP06Yuah4neM=
 			</data>
 		</dict>
+		<key>www/img/loreal.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1DAmQC7Oag6AL7w5v9v0m0FpIHw=
+			</data>
+			<key>hash2</key>
+			<data>
+			XWVH1OT3lyCBAKd2434lAwByzLbkamXo336Z4tV18wQ=
+			</data>
+		</dict>
+		<key>www/img/pma.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YMYSZ96It2bJZclUFwhtumjhMBU=
+			</data>
+			<key>hash2</key>
+			<data>
+			DCq+BUa7gLVb4UHNPKASJvoAQpW9hX2FMD7oFuAs/ak=
+			</data>
+		</dict>
+		<key>www/img/royalclub.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/eN0s8SDDTgOKKwOVZn8dpdO4q0=
+			</data>
+			<key>hash2</key>
+			<data>
+			2AY/VAGMYgZzLOjxJkgE42dcPPcCaXro3+/lFuQvboU=
+			</data>
+		</dict>
+		<key>www/img/senseo.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			skP6cnsDjLTMTNI3tskHVc00hNk=
+			</data>
+			<key>hash2</key>
+			<data>
+			fqhwylsC4f391qoMR9eyE1WqHT9E+uZNa6qBjI05NEQ=
+			</data>
+		</dict>
+		<key>www/img/staatsloterij.JPG</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlSVwTviv6Nv0RGrr4kV4Kw6PCs=
+			</data>
+			<key>hash2</key>
+			<data>
+			2R7++TyPFm1jfnS/2y5A/HJqC23RHX8H8yrB+Yv91E0=
+			</data>
+		</dict>
 		<key>www/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t1ZQg+R8KHoth7ph/lK0Ub5CZZQ=
+			VQ0EPZ0HZ/Y1j4SXcoqkx4FBee8=
 			</data>
 			<key>hash2</key>
 			<data>
-			20CJ24Hl0XN1FaUWrrtBan3Pa+i7xgcgik+A+1oC+1c=
+			kSj3aBBjpZ0KIUPee2+aeVkaF2jQ4t0YrpFjPDvAeUY=
 			</data>
 		</dict>
 		<key>www/js/index.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jBsZLKtxynJWhc6MR52EfLvWdCI=
+			V3vHY6cWxDjMg+24v5XHdFY1J34=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xe3x5vuUhTy53Ebdm4yUDRnxrvJoe9Gfk7OfWvMPNJ4=
+			WHztMn8zkAO3seb1l5nZbB9o9Z102XpPzrtXYL4JON0=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-device/www/device.js</key>

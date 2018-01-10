@@ -33,16 +33,30 @@
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Please allow to use Bluetooth to start beacon monitoring</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app uses your location to track beacons.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app uses your location to track beacons.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app uses your location to track beacons.</string>
     <key>NSMainNibFile</key>
     <string/>
     <key>NSMainNibFile~ipad</key>
     <string/>
     <key>UIBackgroundModes</key>
     <array>
+      <string>bluetooth-central</string>
+      <string>bluetooth-peripheral</string>
       <string>external-accessory</string>
       <string>fetch</string>
       <string>location</string>
-      <string>bluetooth-central</string>
+      <string>remote-notification</string>
+    </array>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+      <string>bluetooth-le</string>
     </array>
     <key>UIRequiresFullScreen</key>
     <true/>
@@ -63,21 +77,9 @@
     </array>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
-    <key>WeAreNexenAppPassword</key>
-    <string>VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR</string>
     <key>WeAreNexenAppName</key>
     <string>ExterionNewsApp</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>This app uses your location to track beacons.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app uses your location to track beacons.</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>This app uses your location to track beacons.</string>
-    <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>Please allow to use Bluetooth to start beacon monitoring</string>
-    <key>UIRequiredDeviceCapabilities</key>
-    <array>
-      <string>bluetooth-le</string>
-    </array>
+    <key>WeAreNexenAppPassword</key>
+    <string>VLLdDyt3ZT2yYwrb3qUTPV6Ata95PzQR</string>
   </dict>
 </plist>

@@ -20,7 +20,7 @@ var app = {
     personalisation: {
         sex: "male",
         uncheckedItems: [],
-        uncheckedItemsNumbers: []
+        uncheckedItemsNumbers: [4, 5, 8, 9, 13, 15]
     },
 
     that: this,
@@ -34,6 +34,10 @@ var app = {
 
         document.querySelector('.settings.close').addEventListener('click', function () {
             document.querySelector('.settings-wrapper').classList.remove('open')
+        });
+
+        document.querySelector('#takeover-close').addEventListener('click', function () {
+            document.querySelector('.takeover').classList.remove('open')
         });
 
         this.initEventListeners();
@@ -126,19 +130,6 @@ var app = {
     },
 
     initBeaconSearch: function () {
-        var logToDom = function (message) {
-            var e = document.createElement('label');
-            e.innerText = message;
-
-            var br = document.createElement('br');
-            var br2 = document.createElement('br');
-            document.body.appendChild(e);
-            document.body.appendChild(br);
-            document.body.appendChild(br2);
-
-            window.scrollTo(0, window.document.height);
-        };
-
         var options = {
             disabledCategories: this.personalisation.uncheckedItemsNumbers,
             tags: {
@@ -152,11 +143,16 @@ var app = {
                 smallIconName: "notification_icon"  // Android only
             }
         };
+
+        console.log('options', options.disabledCategories);
+        console.log('options', options.tags.sex);
+        console.log('options', options.tags.age);
         var that = this;
 
         plugins.NexenSDK.startScanning(options, (data) => {
             // Subscribe to the plugin callbacks
             console.log('startScanning', data);
+            console.log('startScanning', data.toJSON());
             this.onLocationsLoaded();
             this.onProximityZoneNotification();
         }, (err) => {
@@ -166,24 +162,91 @@ var app = {
         plugins.NexenSDK.onLocationsLoaded((data) => {
             console.log('onLocationsLoaded');
             //When a user is in the beacon zone
+            console.log(data);
             console.log(data.toJSON());
         });
 
         plugins.NexenSDK.onProximityZoneNotification((data) => {
-            console.log('onProximityZoneNotificatio', data);
+            console.log('onProximityZoneNotification', data.toJSON());
+            console.log(data);
         }, function (err) {
             console.log(err);
         });
 
+        plugins.NexenSDK.onOpenUrl((url) => {
+            var takeover = document.querySelector('.takeover');
+            var takeoverCanvas = document.querySelector('#takeover-canvas');
+            console.log('onOpenUrl', url);
+
+
+            switch(url) {
+                case 'http://a.nl':
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/staatsloterij.JPG')";
+                    break;
+                case 'http://b.nl':
+                    console.log('Senseo');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/senseo.JPG')";
+                    break;
+                case 'http://c.nl':
+                    console.log('PMA - zorgverzekering');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/pma.JPG')";
+                    break;
+                case 'http://d.nl':
+                    console.log('Eurosport');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/eurosport.JPG')";
+                    break;
+                case 'http://e.nl':
+                    console.log('Aveen - Kerst');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/aveen.JPG')";
+                    break;
+                case 'http://f.nl':
+                    console.log('Loreal lippestift');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/loreal.JPG')";
+                    break;
+                case 'http://g.nl':
+                    console.log('Aveen - Gratis parkeren');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/aveen1.JPG')";
+                    break;
+                case 'http://h.nl':
+                    console.log('Andalucia - Reizen');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/andalucia.JPG')";
+                    break;
+                case 'http://i.nl':
+                    console.log('Aveen - Extra koopavond');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/aveen2.JPG')";
+                    break;
+                case 'http://j.nl':
+                    console.log('Disney Coco film');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/disney-coco.JPG')";
+                    break;
+                case 'http://k.nl':
+                    console.log('Royal club');
+                    takeover.className += " open";
+                    takeoverCanvas.style.backgroundImage = "url('img/royalclub.JPG')";
+                    break;
+
+            }
+
+        }, (err) => {
+            console.log('onOpenUrl', err)
+        });
+
         plugins.NexenSDK.onPushNotificationTappedForZone(beaconId, contentTypeId, (data) => {
             console.log('onPushNotificationTappedForZone');
-            document.querySelector('h1').innerHTML = data.toJSON();
-            logToDom(data);
-            logToDom(data.toJSON());
-            console.log(data.toJSON());
+            console.log(data);
+            console.log('tap-notification',data.toJSON());
         }, (err) => {
             console.log(err);
-            logToDom(err);
         });
     }
 };
